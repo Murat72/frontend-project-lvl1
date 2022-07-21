@@ -1,5 +1,6 @@
 {
   "name": "@hexlet/code",
+  "type": "module",
   "version": "1.0.0",
   "description": "first project Brain Games",
   "main": "index.js",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Murat72/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Murat72/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/Murat72/frontend-project-lvl1#readme",
+  "bin": {
+     "brain-games": "bin/brain-games.js"
+   }
 }
