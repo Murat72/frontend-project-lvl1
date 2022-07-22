@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/Murat72/frontend-project-lvl1#readme",
   "bin": {
-     "brain-games": "bin/brain-games.js"
-   }
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
