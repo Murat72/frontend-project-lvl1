@@ -1,12 +1,6 @@
-import {numberAttempts, showGreeating, compareUserAnswer, askQuestion} from '../src/index.js';
+import {numberAttempts, showGreeating, compareUserAnswer, askQuestion, generateRandomNumber} from '../src/index.js';
 
-const max = 50;
-
-const randomNumber = () => {
-    return Math.floor((Math.random() * max) + 1);
-}
-
-function isNumeric(num){
+const isNumeric = (num) => {
     num = "" + num;
     return !isNaN(num) && !isNaN(parseFloat(num));
   }
@@ -35,8 +29,8 @@ const calc = () => {
     const userName = showGreeating();
     console.log("What is the result of the expression?");
     while(countUserAttempts <= numberAttempts) {
-        const firstNumber = randomNumber();
-        const secondNumber = randomNumber();
+        const firstNumber = generateRandomNumber(1, 50);
+        const secondNumber = generateRandomNumber(1, 50);
         const operation = randomOperations();
         let userAnswer = askQuestion(`${firstNumber} ${operation} ${secondNumber}`);
         if (isNumeric(userAnswer)) {
