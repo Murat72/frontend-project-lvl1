@@ -3,8 +3,12 @@ import readlineSync from 'readline-sync';
 
 const numberAttempts = 3;
 
+const generateRandomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 const compareUserAnswer = (userAnswer, corAnswer, userName, countUserAttempts) => {
-    
+
     if (userAnswer === corAnswer) {
         console.log("Correct!")
         if (countUserAttempts === numberAttempts) {
@@ -30,5 +34,5 @@ const askQuestion = (question) => {
     return readlineSync.question('Your answer: ');
 }
 
-export {numberAttempts, showGreeating, compareUserAnswer, askQuestion};
+export {numberAttempts, showGreeating, compareUserAnswer, askQuestion, generateRandomNumber};
 
