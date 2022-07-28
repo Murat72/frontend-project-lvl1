@@ -1,12 +1,6 @@
-import {numberAttempts, showGreeating, compareUserAnswer, askQuestion} from '../src/index.js';
+import {numberAttempts, showGreeating, compareUserAnswer, askQuestion, generateRandomNumber} from '../src/index.js';
 
-const max = 80;
-
-const randomNumber = () => {
-    return Math.floor((Math.random() * max) + 1);
-}
-
-function isNumeric(num){
+const isNumeric = (num) => {
     num = "" + num;
     return !isNaN(num) && !isNaN(parseFloat(num));
 }
@@ -26,8 +20,8 @@ const gcd = () => {
     const userName = showGreeating();
     console.log("Find the greatest common divisor of given numbers.");
     while(countUserAttempts <= numberAttempts) {
-        const firstNumber = randomNumber();
-        const secondNumber = randomNumber();
+        const firstNumber = generateRandomNumber(1, 100);
+        const secondNumber = generateRandomNumber(1, 100);
         let userAnswer = askQuestion(`${firstNumber} ${secondNumber}`);
         if (isNumeric(userAnswer)) {
             userAnswer = Number(userAnswer);
