@@ -1,5 +1,5 @@
-import { 
-    numberAttempts, showGreeating, compareUserAnswer, askQuestion, generateRandomNumber 
+import {
+  numberAttempts, showGreeating, compareUserAnswer, askQuestion, generateRandomNumber,
 } from '../src/index.js';
 
 const isNumeric = (num) => {
@@ -14,7 +14,7 @@ const randomOperations = () => {
 };
 
 const correctAnswer = (firstNumber, secondNumber, operation) => {
-  switch(operation) {
+  switch (operation) {
     case '+':
       return firstNumber + secondNumber;
     case '-':
@@ -48,4 +48,3 @@ const calc = () => {
 };
 
 export default calc;
-      
