@@ -2,6 +2,8 @@ import { runGameEngine} from '../index.js';
 
 import { generateRandomNumber } from '../utils.js';
 
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const generateRound = () => {
   const number = generateRandomNumber(1, 100);
   const question = `${number}`;
@@ -10,7 +12,6 @@ const generateRound = () => {
 }
 
 const runEvenNumberGame = () => {
-  const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
   runGameEngine(rule, generateRound);
 };
 

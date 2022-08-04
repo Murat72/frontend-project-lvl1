@@ -2,6 +2,8 @@ import { runGameEngine} from '../index.js';
 
 import { generateRandomNumber } from '../utils.js';
 
+const rule = 'What number is missing in the progression?';
+
 const generateProgression = (startNumber, step, length) => {
   const progression = [];
   let a = startNumber;
@@ -25,7 +27,6 @@ const generateRound = () => {
 }
 
 const runProgressionGame = () => {
-  const rule = 'What number is missing in the progression?';
   runGameEngine(rule, generateRound);
 };
 
