@@ -1,6 +1,5 @@
-import { runGameEngine} from '../index.js';
-
-import { generateRandomNumber } from '../utils.js';
+import runGameEngine from '../index.js';
+import generateRandomNumber from '../utils.js';
 
 const rule = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
@@ -14,7 +13,7 @@ const getCorrectAnswer = (firstNumber, secondNumber, operation) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      return 'Not correct operation';
+      return `Not correct operation - ${operation}`;
   }
 };
 
@@ -25,9 +24,10 @@ const generateRound = () => {
   const question = `${firstNumber} ${operation} ${secondNumber}`;
   const correctAnswer = `${getCorrectAnswer(firstNumber, secondNumber, operation)}`;
   return [question, correctAnswer];
-}
+};
 
 const runCalcGame = () => {
   runGameEngine(rule, generateRound);
 };
+
 export default runCalcGame;

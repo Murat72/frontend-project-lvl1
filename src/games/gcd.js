@@ -1,6 +1,5 @@
-import { runGameEngine} from '../index.js';
-
-import { generateRandomNumber } from '../utils.js';
+import runGameEngine from '../index.js';
+import generateRandomNumber from '../utils.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
@@ -22,7 +21,7 @@ const generateRound = () => {
   const question = `${firstNumber} ${secondNumber}`;
   const correctAnswer = `${getGCD(firstNumber, secondNumber)}`;
   return [question, correctAnswer];
-}
+};
 
 const runGCDGame = () => {
   runGameEngine(rule, generateRound);

@@ -1,6 +1,5 @@
-import { runGameEngine} from '../index.js';
-
-import { generateRandomNumber } from '../utils.js';
+import runGameEngine from '../index.js';
+import generateRandomNumber from '../utils.js';
 
 const rule = 'What number is missing in the progression?';
 
@@ -21,10 +20,10 @@ const generateRound = () => {
   const progression = generateProgression(firstNumber, stepProgression, lengthProgression);
   const randomIndex = generateRandomNumber(0, lengthProgression - 1);
   const correctAnswer = `${progression[randomIndex]}`;
-  progression.splice(randomIndex, 1, '..');
+  progression[randomIndex] = '..';
   const question = `${progression.join(' ')}`;
   return [question, correctAnswer];
-}
+};
 
 const runProgressionGame = () => {
   runGameEngine(rule, generateRound);
