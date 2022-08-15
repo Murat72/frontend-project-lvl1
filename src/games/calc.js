@@ -13,7 +13,7 @@ const getCorrectAnswer = (firstNumber, secondNumber, operation) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      return `Not correct operation - ${operation}`;
+      throw new Error(`Not correct operation - ${operation}`);
   }
 };
 
