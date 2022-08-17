@@ -18,18 +18,24 @@
 1) npm install
 2) npm link
 3) Выбрать игру из списка. Для запуска выбранной игры воспользуйтесь соответствующей коммандой:
-	• Калькулятор: brain-calc
-	• Прогрессия: brain-progression
-	• Определение четного числа: brain-even
-	• Определение наибольшего общего делителя: brain-gcd
-	• Определение простого числа: brain-prime
 
+	• Проверка на четность числа: brain-even
+	• Калькулятор: brain-calc
+	• НОД: brain-gcd
+	• Арифметическая прогрессия: brain-progression
+	• Простое ли число?: brain-prime
+
+### brain-even
 [![asciicast](https://asciinema.org/a/CqXGHOI49qqqV0dPX6URqp6kM.svg)](https://asciinema.org/a/CqXGHOI49qqqV0dPX6URqp6kM)
 
+### brain-calc
 [![asciicast](https://asciinema.org/a/u547345RJjVl9kaD3CYV03JXa.svg)](https://asciinema.org/a/u547345RJjVl9kaD3CYV03JXa)
 
+### brain-gcd
 [![asciicast](https://asciinema.org/a/V2Z1qFsXwdayo8z2qMRQWAMPw.svg)](https://asciinema.org/a/V2Z1qFsXwdayo8z2qMRQWAMPw)
 
+### brain-progression
 [![asciicast](https://asciinema.org/a/q1Bnr99MeS56mtfosUHCdgksz.svg)](https://asciinema.org/a/q1Bnr99MeS56mtfosUHCdgksz)
 
+### brain-prime
 [![asciicast](https://asciinema.org/a/lun1WNv5B1zRdPYwfKG5c8nvu.svg)](https://asciinema.org/a/lun1WNv5B1zRdPYwfKG5c8nvu)
