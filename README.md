@@ -19,11 +19,11 @@
 2) npm link
 3) Выбрать игру из списка. Для запуска выбранной игры воспользуйтесь соответствующей коммандой:
 
-	• Проверка на четность числа: brain-even
-	• Калькулятор: brain-calc
-	• НОД: brain-gcd
-	• Арифметическая прогрессия: brain-progression
-	• Простое ли число?: brain-prime
+	• Проверка на четность числа: brain-even;
+	• Калькулятор: brain-calc;
+	• НОД: brain-gcd;
+	• Арифметическая прогрессия: brain-progression;
+	• Простое ли число?: brain-prime.
 
 ### brain-even
 [![asciicast](https://asciinema.org/a/CqXGHOI49qqqV0dPX6URqp6kM.svg)](https://asciinema.org/a/CqXGHOI49qqqV0dPX6URqp6kM)
