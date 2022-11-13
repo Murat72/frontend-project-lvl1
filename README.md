@@ -1,49 +1,57 @@
 ### Hexlet tests and linter status:
+
 [![Actions Status](https://github.com/Murat72/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Murat72/frontend-project-lvl1/actions)
 
 <a href="https://codeclimate.com/github/Murat72/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/03ec7a2986b872b80265/maintainability" /></a>
 
-### ИГРЫ РАЗУМА
-«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
+### BRAIN GAMES
 
-	• Проверка на чётность. Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
+«Brain Games» — a set of five console games based on popular mobile brain training apps. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again. Games:
 
-	• Калькулятор. Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
-	
-	• Определение наибольшего общего делителя. Суть игры в следующем: пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+    • Parity check. The essence of the game is as follows: the user is shown a random number. And he needs to answer yes if the number is even, or no if it is odd.
 
-	• Арифметическая прогрессия. Показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
+    • Calculator. The essence of the game is as follows: the user is shown a random mathematical expression, for example 35 + 16, which needs to be calculated and written down the correct answer.
 
-	• Простое ли число? Суть игры в следующем: пользователю показывается случайное число. И ему необходимо определить является ли оно простым.
+    • Finding the Greatest Common Divisor. The essence of the game is as follows: the user is shown two random numbers, for example, 25 50. The user must calculate and enter the greatest common divisor of these numbers.
 
-### Установка
-После клонирования проекта выполнить в терминале из директории проекта следующие комманды:
+    • Arithmetic progression. We show the player a series of numbers that form an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
 
-1) npm install
-2) npm link
-3) Выбрать игру из списка. Для запуска выбранной игры воспользуйтесь соответствующей коммандой:
+    • Is it a prime number? The essence of the game is as follows: the user is shown a random number. And he needs to determine whether it is simple.
 
-	• Проверка на четность числа: brain-even
+### INSTALL
 
-	• Калькулятор: brain-calc
+After cloning the project, run the following commands in the terminal from the project directory:
 
-	• НОД: brain-gcd
+1. npm install
+2. npm link
+3. Select a game from the list. To launch the selected game, use the appropriate command:
 
-	• Арифметическая прогрессия: brain-progression
+   • Checking for even number: brain-even
 
-	• Простое ли число?: brain-prime.
+   • Calculator: brain-calc
+
+   • GSD: brain-gcd
+
+   • Arithmetic progression: brain-progression
+
+   • Is it a prime number?: brain-prime.
 
 ### brain-even
+
 [![asciicast](https://asciinema.org/a/CqXGHOI49qqqV0dPX6URqp6kM.svg)](https://asciinema.org/a/CqXGHOI49qqqV0dPX6URqp6kM)
 
 ### brain-calc
+
 [![asciicast](https://asciinema.org/a/u547345RJjVl9kaD3CYV03JXa.svg)](https://asciinema.org/a/u547345RJjVl9kaD3CYV03JXa)
 
 ### brain-gcd
+
 [![asciicast](https://asciinema.org/a/V2Z1qFsXwdayo8z2qMRQWAMPw.svg)](https://asciinema.org/a/V2Z1qFsXwdayo8z2qMRQWAMPw)
 
 ### brain-progression
+
 [![asciicast](https://asciinema.org/a/q1Bnr99MeS56mtfosUHCdgksz.svg)](https://asciinema.org/a/q1Bnr99MeS56mtfosUHCdgksz)
 
 ### brain-prime
+
 [![asciicast](https://asciinema.org/a/lun1WNv5B1zRdPYwfKG5c8nvu.svg)](https://asciinema.org/a/lun1WNv5B1zRdPYwfKG5c8nvu)
